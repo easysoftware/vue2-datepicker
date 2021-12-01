@@ -10,7 +10,7 @@ export default {
   },
   emits: ['select'],
   props: {
-    ...TimePanel.props,
+    ...TimePanel.props
   },
   data() {
     return {
@@ -71,7 +71,7 @@ export default {
     return (
       <div class={`${prefixClass}-range-wrapper`}>
         <TimePanel
-          {...this.$props}
+          {...this.$props, isRange: true}
           {...this.$attrs}
           value={this.startValue}
           defaultValue={defaultValues[0]}
@@ -79,7 +79,7 @@ export default {
           onSelect={this.handleSelectStart}
         />
         <TimePanel
-          {...this.$props}
+          {...this.$props, isRange: true}
           {...this.$attrs}
           value={this.endValue}
           defaultValue={defaultValues[1]}

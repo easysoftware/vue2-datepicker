@@ -1,5 +1,5 @@
 {
-  "name": "vue2-datepicker",
+  "name": "@easy/vue2-datepicker",
   "description": "Vue3 Datepicker Component",
   "main": "index.js",
   "module": "index.esm.js",
@@ -11,13 +11,13 @@
     "/index.*",
     "/scss"
   ],
-  "version": "4.0.0-beta.2",
+  "version": "1.0.5",
   "scripts": {
     "dev": "cross-env NODE_ENV=development rollup -c -w",
     "build:index": "cross-env NODE_ENV=production rollup -c",
     "build:locale": "cross-env NODE_ENV=production rollup -c rollup.locale.config.js",
     "build:css": "sass --style=compressed --no-source-map src/style/index.scss index.css && postcss index.css --use autoprefixer -o index.css --no-map && cp -R src/style scss",
-    "build": "npm run test && npm run clean && npm run build:index && npm run build:css && npm run build:locale",
+    "build": "npm run clean && npm run build:index && npm run build:css && npm run build:locale",
     "clean": "rimraf scss locale index.*",
     "lint": "eslint src/**/*.{js,vue}",
     "lint:fix": "eslint src/**/*.{js,vue} --fix",
@@ -25,11 +25,12 @@
     "test": "npm run lint && jest",
     "cov": "jest --coverage --coverageReporters=text-lcov | coveralls",
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
-    "release": "bash build/release.sh"
+    "release": "bash build/release.sh",
+    "publish": "npm publish --registry https://nodes.easysoftware.com"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mengxiong10/vue2-datepicker.git"
+    "url": "git@github.com:easysoftware/vue2-datepicker.git"
   },
   "keywords": [
     "vue",
