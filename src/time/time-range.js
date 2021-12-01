@@ -71,16 +71,18 @@ export default {
     return (
       <div class={`${prefixClass}-range-wrapper`}>
         <TimePanel
-          {...this.$props, isRange: true}
+          {...this.$props}
           {...this.$attrs}
+          isRange={true}
           value={this.startValue}
           defaultValue={defaultValues[0]}
           disabledTime={this.disabledStartTime}
           onSelect={this.handleSelectStart}
         />
         <TimePanel
-          {...this.$props, isRange: true}
+          {...this.$props}
           {...this.$attrs}
+          isRange={true}
           value={this.endValue}
           defaultValue={defaultValues[1]}
           disabledTime={this.disabledEndTime}
