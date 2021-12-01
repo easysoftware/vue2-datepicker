@@ -6,11 +6,6 @@
   "alias": {
     "vue2-datepicker": "./src/index.js"
   },
-  "files": [
-    "/locale",
-    "/index.*",
-    "/scss"
-  ],
   "version": "1.0.7",
   "scripts": {
     "dev": "cross-env NODE_ENV=development rollup -c -w",
