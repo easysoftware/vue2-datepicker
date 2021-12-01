@@ -71,7 +71,7 @@ export default {
     return (
       <div class={`${prefixClass}-range-wrapper`}>
         <TimePanel
-          {...this.$props, isRange: trueg}
+          {...this.$props, isRange: true}
           {...this.$attrs}
           value={this.startValue}
           defaultValue={defaultValues[0]}
