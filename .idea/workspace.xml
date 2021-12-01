@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="da9cbd0e-417d-48c0-bad5-2a920a793fc5" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +36,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="MTHome" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -47,7 +52,7 @@
       <option name="presentableId" value="Default" />
       <updated>1638364987284</updated>
       <workItem from="1638364988534" duration="834000" />
-      <workItem from="1638365937514" duration="729000" />
+      <workItem from="1638365937514" duration="1103000" />
     </task>
     <servers />
   </component>
