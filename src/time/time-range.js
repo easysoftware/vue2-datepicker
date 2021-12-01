@@ -76,6 +76,7 @@ export default {
               value: this.startValue,
               defaultValue: defaultValues[0],
               disabledTime: this.disabledStartTime,
+              isRange: true
             },
             on: {
               ...this.$listeners,
@@ -90,6 +91,7 @@ export default {
               value: this.endValue,
               defaultValue: defaultValues[1],
               disabledTime: this.disabledEndTime,
+              isRange: true
             },
             on: {
               ...this.$listeners,

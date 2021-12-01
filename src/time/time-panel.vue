@@ -1,5 +1,5 @@
 <template>
-  <div :class="`${prefixClass}-time`">
+  <div :class="{[`${prefixClass}-time`]: !isRange}">
     <div v-if="showTimeHeader" :class="`${prefixClass}-time-header`">
       <button
         type="button"
@@ -119,6 +119,10 @@ export default {
       type: Number,
       default: 100,
     },
+    isRange: {
+      type: Boolean,
+      default: false,
+    }
   },
   data() {
     return {
